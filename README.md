@@ -47,5 +47,13 @@ in replace enter your character to append
 in search mode change to regular expression
 hit Enter
 ```
+### filter strings in cmd output like netstat 
+```
+netstat -ano | findstr /si established
+netstat -ano | findstr /si 8080
+```
+
+
+
 
 
