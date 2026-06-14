@@ -30,3 +30,22 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" ^
  reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 ```
 
+### append a character to all lines in notepad++
+```
+click search and replace or ctrl+h
+in find what type $
+in replace enter your character to append
+in search mode change to regular expression
+hit Enter
+```
+
+### prepend a character to all lines in notepad++
+```
+click search and replace or ctrl+h
+in find what type ^
+in replace enter your character to append
+in search mode change to regular expression
+hit Enter
+```
+
+
